@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o texto da página */
+    margin: 0; /* Remove a margem padrão do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão do corpo da página */
+    background-color: #f4f4f4; /* Define a cor de fundo da página */
+}
+
+header {
+    background-color: #4a6fa5; /* Define a cor de fundo do cabeçalho */
+    color: #fff; /* Define a cor do texto no cabeçalho */
+    display: flex; /* Usa flexbox para alinhar o conteúdo dentro do cabeçalho */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens, alinhando-os às extremidades */
+    padding: 10px 20px; /* Adiciona preenchimento ao redor do conteúdo do cabeçalho */
+}
+
+header .logo {
+    height: 60px; /* Define a altura da imagem do logo no cabeçalho */
+}
+
+header h1 {
+    margin: 0; /* Remove a margem padrão ao redor do título */
+    font-family: 'Great Vibes', cursive; /* Define a fonte para o título do cabeçalho */
+    font-size: 3rem; /* Define o tamanho da fonte do título */
+    font-weight: normal; /* Define o peso da fonte como normal */
+}
+
+nav {
+    display: flex; /* Usa flexbox para exibir links de navegação horizontalmente */
+    gap: 20px; /* Define o espaço entre os links de navegação */
+}
+
+nav a {
+    color: #fff; /* Define a cor dos links de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    text-transform: uppercase; /* Transforma o texto dos links em maiúsculas */
+    font-weight: bold; /* Define o peso da fonte dos links como negrito */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado aos links ao passar o mouse sobre eles */
+}
+
+nav a.menu-btn {
+    background-color: #f1f1f1; /* Define a cor de fundo dos botões de menu */
+    color: #4a6fa5; /* Define a cor do texto dos botões de menu */
+    padding: 10px 20px; /* Adiciona preenchimento ao redor do texto dos botões de menu */
+    border-radius: 20px; /* Define bordas arredondadas para os botões de menu */
+    text-transform: uppercase; /* Transforma o texto dos botões de menu em maiúsculas */
+    font-weight: bold; /* Define o peso da fonte dos botões de menu como negrito */
+    text-decoration: none; /* Remove o sublinhado dos botões de menu */
+    border: 2px solid #4a6fa5; /* Adiciona uma borda aos botões de menu */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave para as mudanças de cor */
+}
+
+nav a.menu-btn:hover {
+    background-color: #6b9ce4; /* Define a cor de fundo dos botões de menu ao passar o mouse sobre eles */
+    color: #fff; /* Define a cor do texto dos botões de menu ao passar o mouse sobre eles */
+}
+
+.container {
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo dentro do container */
+    background-color: #fdfdfd; /* Define a cor de fundo do container */
+}
+
+#destaque {
+    background-color: #4a6fa5; /* Define a cor de fundo da seção de destaque */
+    color: #fff; /* Define a cor do texto na seção de destaque */
+    display: flex; /* Usa flexbox para alinhar o conteúdo dentro da seção de destaque */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo da seção de destaque */
+    border-radius: 10px; /* Define bordas arredondadas para a seção de destaque */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar a seção de destaque de outros conteúdos */
+}
+
+.destaque-img img {
+    max-width: 150px; /* Define a largura máxima da imagem de destaque */
+    border-radius: 10px; /* Define bordas arredondadas para a imagem de destaque */
+}
+
+.destaque-texto {
+    margin-left: 20px; /* Adiciona uma margem à esquerda do texto de destaque */
+}
+
+.destaque-texto h2 {
+    margin: 0; /* Remove a margem padrão ao redor do título de destaque */
+    font-size: 1.5rem; /* Define o tamanho da fonte do título de destaque */
+}
+
+#recomendacoes, #mais-lidos {
+    background-color: #f5f5f5; /* Define a cor de fundo das seções de recomendações e mais lidos */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo dessas seções */
+    border-radius: 10px; /* Define bordas arredondadas para as seções */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar as seções de outros conteúdos */
+}
+
+#recomendacoes h2, #mais-lidos h2 {
+    margin-bottom: 20px; /* Adiciona uma margem inferior aos títulos das seções de recomendações e mais lidos */
+}
+
+#ofertas {
+    background-color: #f5f5f5; /* Define a cor de fundo da seção de ofertas */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo da seção de ofertas */
+    border-radius: 10px; /* Define bordas arredondadas para a seção de ofertas */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar a seção de ofertas de outros conteúdos */
+}
+
+.book-grid {
+    display: grid; /* Usa grid layout para organizar os itens de livros */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Define colunas que se ajustam automaticamente com um tamanho mínimo de 150px */
+    gap: 20px; /* Define o espaço entre os itens de livro */
+}
+
+.book-item {
+    background-color: #fff; /* Define a cor de fundo dos itens de livro */
+    padding: 10px; /* Adiciona preenchimento ao redor do conteúdo dos itens de livro */
+    border-radius: 5px; /* Define bordas arredondadas para os itens de livro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil aos itens de livro */
+    text-align: center; /* Alinha o texto no centro dos itens de livro */
+    border: 2px solid #9ea9bbb3; /* Adiciona uma borda aos itens de livro */
+}
+
+.book-item img {
+    max-width: 100%; /* Define a largura máxima da imagem do item de livro para 100% do seu contêiner */
+    border-radius: 5px; /* Define bordas arredondadas para a imagem do item de livro */
+}
+
+.review {
+    background: #4a6fa5; /* Define a cor de fundo das avaliações */
+    color: #fff; /* Define a cor do texto das avaliações */
+    border: 5px solid #ddd; /* Adiciona uma borda às avaliações */
+    border-radius: 5px; /* Define bordas arredondadas para as avaliações */
+    padding: 15px; /* Adiciona preenchimento ao redor do conteúdo das avaliações */
+    margin-bottom: 15px; /* Adiciona uma margem inferior para separar as avaliações de outros conteúdos */
+}
+
+.review h3 {
+    margin-top: 0; /* Remove a margem superior do título da avaliação */
+}
+
+.review p {
+    margin: 0; /* Remove a margem ao redor do parágrafo da avaliação */
+}
+
+form {
+    background: #fff; /* Define a cor de fundo do formulário */
+    border: 1px solid #ddd; /* Adiciona uma borda ao formulário */
+    border-radius: 5px; /* Define bordas arredondadas para o formulário */
+    padding: 15px; /* Adiciona preenchimento ao redor do conteúdo do formulário */
+}
+
+form input, form textarea {
+    width: 100%; /* Define a largura dos campos de entrada e textarea para 100% do seu contêiner */
+    padding: 10px; /* Adiciona preenchimento ao redor do texto dentro dos campos de entrada e textarea */
+    margin: 10px 0; /* Adiciona uma margem vertical entre os campos de entrada e textarea */
+    border: 1px solid #ddd; /* Adiciona uma borda aos campos de entrada e textarea */
+    border-radius: 5px; /* Define bordas arredondadas para os campos de entrada e textarea */
+    font-weight: bold; /* Define o peso da fonte para os campos de entrada e textarea como negrito */
+}
+
+form input[type="submit"] {
+    background: #4a6fa5; /* Define a cor de fundo do botão de envio */
+    color: #fff; /* Define a cor do texto do botão de envio */
+    border: none; /* Remove a borda padrão do botão de envio */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão de envio */
+}
+
+form input[type="submit"]:hover {
+    background: #6b9ce4; /* Define a cor de fundo do botão de envio ao passar o mouse sobre ele */
+}
+
+.form_resenha {
+    margin: 0; /* Remove qualquer margem extra */
+    padding: 0; /* Remove qualquer padding extra */
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha os itens do cabeçalho verticalmente em dispositivos menores */
+        align-items: center; /* Alinha os itens do cabeçalho ao centro */
+    }
+
+    nav {
+        flex-direction: column; /* Alinha os links de navegação verticalmente em dispositivos menores */
+        align-items: center; /* Alinha os links de navegação ao centro */
+    }
+
+    #destaque {
+        flex-direction: column; /* Alinha os itens da seção de destaque verticalmente em dispositivos menores */
+        align-items: center; /* Alinha os itens da seção de destaque ao centro */
+        text-align: center; /* Alinha o texto ao centro na seção de destaque */
+    }
+
+    .destaque-texto {
+        margin-left: 0; /* Remove a margem esquerda do texto de destaque em dispositivos menores */
+        margin-top: 20px; /* Adiciona uma margem superior ao texto de destaque em dispositivos menores */
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr; /* Define uma única coluna para a grade de livros em dispositivos menores */
+    }
+}
+
+.review {
+    border: 1px solid #ddd; /* Adiciona uma borda ao redor da avaliação */
+    padding: 15px; /* Adiciona preenchimento ao redor do conteúdo da avaliação */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar as avaliações de outros conteúdos */
+    border-radius: 8px; /* Define bordas arredondadas para a seção de avaliação */
+}
+
+.reviews h2 {
+    font-size: 24px; /* Define o tamanho da fonte para o título da seção de resenhas */
+    margin-bottom: 20px; /* Adiciona uma margem inferior ao título da seção */
+    color: #000000; /* Define a cor do título da seção de resenhas */
+}
+
+.review h3 {
+    font-size: 18px; /* Define o tamanho da fonte do título de cada resenha */
+    color: #333; /* Define a cor do título da resenha */
+    margin-bottom: 10px; /* Adiciona uma margem inferior ao título da resenha */
+    color: white; /* Corrige a cor para branco do título da resenha */
+}
+
+.review p {
+    font-size: 16px; /* Define o tamanho da fonte para o conteúdo da resenha */
+    line-height: 1.5; /* Define o espaçamento entre linhas do conteúdo da resenha */
+    margin-bottom: 10px; /* Adiciona uma margem inferior ao parágrafo */
+    color: #fcfcfc; /* Define a cor do texto da resenha */
+}
+
+button {
+    margin-top: 5px; /* Adiciona uma margem superior ao botão */
+    background-color: #ffffff; /* Define a cor de fundo do botão */
+    color: #4a6fa5; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 5px 10px; /* Adiciona preenchimento ao redor do texto no botão */
+    border-radius: 5px; /* Define bordas arredondadas para o botão */
+}
+
+textarea {
+    display: block; /* Torna o campo textarea um bloco, ocupando toda a largura disponível */
+    width: 100%; /* Define a largura do campo textarea para 100% do contêiner */
+    margin-top: 5px; /* Adiciona uma margem superior ao campo textarea */
+    margin-bottom: 10px; /* Adiciona uma margem inferior ao campo textarea */
+    border-radius: 5px; /* Define bordas arredondadas para o campo textarea */
+    padding: 5px; /* Adiciona preenchimento ao redor do texto dentro do campo textarea */
+}
+
+#login-section, #cadastro-section {
+    max-width: 400px; /* Limita a largura da seção para no máximo 400px */
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    padding: 20px; /* Adiciona 20px de preenchimento interno */
+    background-color: #fff; /* Define o fundo como branco */
+    border-radius: 8px; /* Arredonda as bordas da seção em 8px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve em volta da seção */
+}
+
+.titulo_login {
+    text-align: center; /* Centraliza o texto */
+}
+
+form {
+    display: flex; /* Usa Flexbox para organizar os itens */
+    flex-direction: column; /* Organiza os itens de cima para baixo */
+}
+
+form label {
+    margin-bottom: 8px; /* Adiciona um espaçamento inferior entre o rótulo e o campo de entrada */
+}
+
+form input {
+    padding: 10px; /* Adiciona 10px de preenchimento interno */
+    margin-bottom: 15px; /* Adiciona 15px de espaçamento entre os campos de entrada */
+    border: 1px solid #ddd; /* Define a borda com uma cor cinza clara */
+    border-radius: 4px; /* Borda arredondada de 4px */
+}
+
+form .btn-submit {
+    padding: 10px; /* Preenchimento interno no botão */
+    background-color: #4a6fa5; /* Cor de fundo azul */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove qualquer borda padrão */
+    border-radius: 4px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 1rem; /* Tamanho da fonte no botão */
+}
+
+form .btn-submit:hover {
+    background-color: #6b9ce4; /* Altera a cor de fundo quando o botão é focado */
+}
+
+.p_login {
+    text-align: center; /* Centraliza o texto */
+}

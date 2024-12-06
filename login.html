@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sousa's Literary</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo do site" class="logo">
+        </a>
+        <h1>Sousa's Literary</h1>
+        <nav>
+            <a href="index.html" class="menu-btn">Inicio</a>
+            <a href="sobre.html" class="menu-btn">Sobre</a>
+            <a href="resenha.php" class="menu-btn">Resenha</a>
+            <a href="ofertas.html" class="menu-btn">Ofertas</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="login-section">
+            <h2 class="titulo_login">Faça seu Login</h2>
+            <form action="login.php" method="POST" id="login-form">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn-submit">Entrar</button>
+            </form>
+            <p class="p_login">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </section>
+    </div>
+
+</body>
+
+</html>

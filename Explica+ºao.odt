@@ -1,0 +1,33 @@
+const formResenha = document.querySelector("form");
+Essa linha seleciona o primeiro formulário na página e o armazena na constante formResenha.
+
+if (formResenha) {
+Aqui, é verificado se o formulário existe antes de adicionar um evento a ele.
+
+formResenha.addEventListener("submit", function(event) {
+Um ouvinte de evento é adicionado ao formulário para escutar o evento de envio.
+
+event.preventDefault(); // Previne o envio real do formulário
+O método preventDefault() impede o envio padrão do formulário, evitando o recarregamento da página.
+
+alert("Sua resenha foi enviada com sucesso!");
+Uma mensagem de alerta é exibida, informando ao usuário que a resenha foi enviada com sucesso.
+
+formResenha.reset(); // Reseta os campos do formulário após o envio
+Os campos do formulário são resetados, voltando ao estado inicial.
+
+const ofertasItens = document.querySelectorAll("#ofertas .book-item");
+Esta linha seleciona todos os elementos com a classe book-item dentro do elemento com o ID ofertas.
+
+ofertasItens.forEach(item => {
+Um loop forEach é utilizado para iterar sobre cada item na lista de ofertas.
+
+item.addEventListener("mouseenter", function() {
+        item.style.backgroundColor = "#6b9ce4";
+    });
+Um ouvinte de evento é adicionado para mudar a cor de fundo do item para azul claro quando o mouse entra sobre ele.
+
+item.addEventListener("mouseleave", function() {
+        item.style.backgroundColor = "#fff";
+    });
+});
