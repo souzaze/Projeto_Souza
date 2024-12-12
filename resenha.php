@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "ifsp";
+$password = "";
 $dbname = "sousas_literary";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -13,7 +13,9 @@ if ($conn->connect_error) {
 // Deletar resenha
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
     $delete_id = $_POST['delete_id'];
-    $conn->query("DELETE FROM resenhas WHERE id = $delete_id");
+    $query = "DELETE FROM resenhas WHERE id = $delete_id";
+    echo $query;
+    $conn->query($query);
 }
 
 // Obter resenhas
